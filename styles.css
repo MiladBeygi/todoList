@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+    background-image: linear-gradient(#217074, #EDC5AB);
+    width: 98vw;
+    margin: 0 auto;
+    /* background-color: darkslateblue; */
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    border: 2px solid black;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li button {
+    border: none;
+    background-color: inherit;
+    color: darkblue;
+    font-size: 1.25rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav ul li select {
+    /* font-size: 16px; */
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav ul li label {
+    font-size: 1.25rem;
+    color: darkblue;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-page {
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2rem 0; */
+}
+
+.edit-page {
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2rem 0; */
+}
+
+.input-fileds {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.input-fileds input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.input-fileds button {
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: darkblue;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+.input-fileds button:hover {
+    background-color: aliceblue;
+    color: darkblue;
+    border: 2px solid darkblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+.successful-message {
+    width: 20%;
+    background-color: green;
+    color: aliceblue;
+    position: relative;
+    padding: 1rem;
+    transition: 1.5s;
+    opacity: 0;
+}
+
+.successful-message button {
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.successful-message button:hover {
+    background-color: aliceblue;
+    color: green;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.row div {
+    margin: 1px 5px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.todos {
+    width: 50%;
+    margin: 0.3rem auto;
+    border: 3px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.todo-buttons i {
+    font-size: 16px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.todo-buttons i:hover {
+    font-size: 20px;
+}
+
+.pages-section {
+    width: 50%;
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pages-section button {
+    padding: 5px;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.right,
+.left {
+    background-color: inherit;
+    border: none;
+}
+
+.page-num {
+    margin: 0 5px;
+}
+
+.todos {
+    /* background-color: #EDC5AB; */
+    background-image: linear-gradient(to right, #EDC5AB, #E7EAEF);
+    box-shadow: 2px 3px 5px;
+}
+
+@media screen and (max-width:1350px) {
+    body {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        height: fit-content;
+    }
+
+    .home-page {
+        width: 100%;
+    }
+
+    .todos {
+        width: 100%;
+    }
+
+
+}
+
+.delete-modal {
+    position: absolute;
+    top: 3rem;
+    right: 25%;
+    width: 50%;
+    margin: 3rem auto;
+    border: 2px solid black;
+    background-color: darkgray;
+    padding: 10px;
+}
+
+.delete-modal hr {
+    /* margin-top: 10px; */
+    margin: 10px 0;
+}
+
+.delete-modal-buttons {
+    margin: 1rem 0;
+    justify-content: space-around;
+}
+
+.delete-infos-modal {
+    gap: 10px;
+}
+
+.delete-modal-buttons button {
+    padding: 5px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.fa-exclamation-triangle {
+    font-size: 24px;
+    color: red;
+}

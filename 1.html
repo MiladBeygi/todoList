@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>HW12 todo list</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="home"><button id="home-but">Home</button> </li>
+            <li class="todos-button"><button id="todos-but">Todos</button> </li>
+            <li>
+                <label for="todoPerPage">Todos per page</label>
+                <select name="eachPage" id="todoPerPage">
+                    <option value="2">2</option>
+                    <option value="4" selected>4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <div class="home-page">
+        <div class="input-fileds">
+            <label for="title">Title * </label>
+            <input type="text" id="title" placeholder="whta will you do?">
+        </div>
+        <div class="input-fileds">
+            <label for="description">Description </label>
+            <input type="text" id="description" placeholder="Some information">
+        </div>
+        <div class="input-fileds">
+            <label for="date">Due Date * </label>
+            <input type="date" id="date" placeholder="10/31/2021">
+        </div>
+        <div class="input-fileds">
+            <button class="sumbit-button">Submit</button>
+        </div>
+    </div>
+    <div class="edit-page hidden">
+        <div class="input-fileds">
+            <label for="title-edit">Title * </label>
+            <input type="text" id="title-edit" placeholder="whta will you do?">
+        </div>
+        <div class="input-fileds">
+            <label for="description-edit">Description </label>
+            <input type="text" id="description-edit" placeholder="Some information">
+        </div>
+        <div class="input-fileds">
+            <label for="date-edit">Due Date * </label>
+            <input type="date" id="date-edit" placeholder="10/31/2021">
+        </div>
+        <div class="input-fileds">
+            <button class="sumbit-button-edit">Save</button>
+        </div>
+    </div>
+    <div class="successful-message hidden">
+        <div>Successful</div>
+        <div>The todo successfully submited</div>
+        <button onclick="closeSuccessfulMessage(event)">[X]</button>
+    </div>
+    <div class="todo-section ">
+        <!-- <div class="todos">
+            <div class="row space-between">
+                <div class="row">
+                    <div class="checkbox" onclick="checkedFunc('id')"><input type="checkbox"></div>
+                    <div>
+                        <h2 class="todo-title">checking e-mail</h2>
+                    </div>
+                    <div class="todo-time">31/10/2021</div>
+                </div>
+
+                <div class="todo-buttons row">
+                    <div><i class="fa fa-trash" onclick="trashFunc('id')"></i></div>
+                    <div><i class="fa fa-pencil" onclick="editFunc('id')"></i></div>
+                </div>
+            </div>
+            <div class="todo-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magnam necessitatibus molestias ea optio
+                beatae soluta dolorem laborum nesciunt quod vel vero, quia quibusdam accusantium exercitationem iure
+                laboriosam harum dolorum.
+            </div>
+        </div> -->
+    </div>
+    <div class="pages-section ">
+        <button class="left" onclick="prevPageFunc(event)">&lt;</button>
+        <div class="page-numbers">
+            <!-- <button class="page-num">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <button class="page-num">4</button>
+            <button class="page-num">5</button> -->
+        </div>
+
+        <button class="right" onclick="nextPageFunc(event)">&gt;</button>
+    </div>
+    <div class="delete-modal hidden">
+        <!-- <h2><i class="fa fa-exclamation-triangle"></i> Delete </h2>
+        <hr>
+        <h2>Do you want to Delete this item?</h2>
+        <div class="row delete-infos-modal">
+            <h3 class="delete-title-modal">cheking e-mail</h3>
+            <p class="delete-time-moadal">31/10/2021</p>
+        </div>
+        <hr>
+        <div class="row delete-modal-buttons">
+            <button onclick="deleteTodo(event)">Delete</button>
+            <button onclick="cancelDelete(event)">Cancel</button>
+        </div> -->
+    </div>
+    <script src="1.js"></script>
+</body>
+
+</html>
